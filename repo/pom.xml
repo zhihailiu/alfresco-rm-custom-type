@@ -57,13 +57,13 @@
         -->
         <!-- Uncomment if you are using the RM (Records Management) module. -->
         <!-- Set alfresco.rm.version in parent pom to appropriate version for 5.1
+        -->
         <dependency>
             <groupId>${alfresco.groupId}</groupId>
             <artifactId>alfresco-rm</artifactId>
             <version>${alfresco.rm.version}</version>
             <type>amp</type>
         </dependency>
-        -->
     </dependencies>
 
     <build>
@@ -104,12 +104,12 @@
                         -->
                         <!-- Uncomment if you are using RM -->
                         <!--
+                        -->
                         <overlay>
                             <groupId>${alfresco.groupId}</groupId>
                             <artifactId>alfresco-rm</artifactId>
                             <type>amp</type>
                         </overlay>
-                        -->
                     </overlays>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>

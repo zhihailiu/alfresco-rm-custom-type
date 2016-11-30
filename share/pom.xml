@@ -35,13 +35,13 @@
         </dependency>
         <!-- Uncomment if you are using RM (Records Management) module -->
         <!-- Make sure to set the correct version for 5.1 with alfresco.rm.version property in parent POM
+        -->
         <dependency>
             <groupId>${alfresco.groupId}</groupId>
             <artifactId>alfresco-rm-share</artifactId>
             <version>${alfresco.rm.version}</version>
             <type>amp</type>
         </dependency>
-        -->
     </dependencies>
 
     <build>
@@ -101,12 +101,12 @@
                         </overlay>
                         <!-- Uncomment if you are using RM module -->
                         <!--
+                        -->
                         <overlay>
                             <groupId>${alfresco.groupId}</groupId>
                             <artifactId>alfresco-rm-share</artifactId>
                             <type>amp</type>
                         </overlay>
-                        -->
                     </overlays>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
