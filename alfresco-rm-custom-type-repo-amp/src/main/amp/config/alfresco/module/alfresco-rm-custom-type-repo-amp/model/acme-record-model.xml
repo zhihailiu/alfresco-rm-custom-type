@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="acme:contentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>ACME Custom Record Model</description>
+	<author>Zhihai Liu</author>
+	<version>1.0</version>
+	
+	<!-- Imports are required to allow references to definitions in other models -->
+	<imports>
+		<!-- Import Alfresco Dictionary Definitions -->
+		<import prefix="d" uri="http://www.alfresco.org/model/dictionary/1.0" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import prefix="cm" uri="http://www.alfresco.org/model/content/1.0" />
+		<!-- Import Alfresco Content Domain Model Definitions -->
+		<import prefix="sys" uri="http://www.alfresco.org/model/system/1.0" />
+		<!-- Import Alfresco Records Management Model Definitions -->
+		<import prefix="rma"
+			uri="http://www.alfresco.org/model/recordsmanagement/1.0" />
+	</imports>
+	
+	<!-- Introduction of new namespaces defined by this model -->
+	<namespaces>
+		<namespace prefix="acme" uri="http://www.acme.com/model/content/1.0" />
+	</namespaces>
+	
+	<aspects>
+		<!-- New Record Metadata Set -->
+		<aspect name="acme:recordData">
+			<title>ACME Record</title>
+			
+			<!-- Required -->
+			<parent>rma:recordMetaData</parent>
+			
+			<properties>
+				<property name="acme:recordSource">
+					<title>Record Source</title>
+					<type>d:text</type>
+					<multiple>false</multiple>
+					<index enabled="true">
+						<atomic>true</atomic>
+						<stored>false</stored>
+						<tokenised>both</tokenised>
+					</index>
+				</property>
+				<property name="acme:recordContributor">
+					<title>Record Contributor</title>
+					<type>d:text</type>
+					<multiple>false</multiple>
+					<index enabled="true">
+						<atomic>true</atomic>
+						<stored>false</stored>
+						<tokenised>both</tokenised>
+					</index>
+				</property>
+			</properties>
+			
+			<!-- Required -->
+			<mandatory-aspects>
+				<aspect>rma:filePlanComponent</aspect>
+			</mandatory-aspects>
+		</aspect>
+	</aspects>
+	
+</model>
