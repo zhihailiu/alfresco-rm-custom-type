@@ -20,6 +20,11 @@
 		</property>
 	</bean>
 
+    <!-- Bootstrap acme:recordData aspect. It shows up in the select list of "Add Record Metadata" in Share.
+         Note: it seems that DoD 5015 module is able to customize Share UI for this aspect. 
+         There is no need to config the aspect in share-config-custom.xml.
+         But make sure to define the resource (for label) in {module}-share-amp.properties.
+     -->
 	<bean id="acme.recordMetadataAspectBootstrap" parent="recordMetadataAspectBootstrap">
 		<property name="recordMetadataAspects">
 			<map>

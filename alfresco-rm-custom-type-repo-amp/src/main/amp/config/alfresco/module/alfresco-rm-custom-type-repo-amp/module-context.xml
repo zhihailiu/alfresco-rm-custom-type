@@ -22,8 +22,7 @@
 
     <!-- This is filtered by Maven at build time, so that module name is single sourced. -->
     
-    <!-- 
-     -->
+    <!-- IMPORTANT: load dod5015 context first. Otherwise it runs into namespace errors for dod prefix. -->
     <import resource="classpath:alfresco/module/org_alfresco_module_rm/dod5015/dod5015-context.xml" />
 
 	<!-- Note. The bootstrap-context.xml file has to be loaded first.
