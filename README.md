@@ -7,3 +7,4 @@ Suppose you have a DoD 5015 record management site in Share. After a document is
 
 ### Reference
 - https://www.fikatechnologies.com/alfresco-records-management-custom-metadata/
+- http://www.tribloom.com/index.php/blog/how-create-custom-record-type-alfresco-records-management-20
